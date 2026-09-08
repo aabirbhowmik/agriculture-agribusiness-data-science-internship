@@ -167,18 +167,94 @@ Official DES Publications
 Agriculture Dashboard
 DES Agriculture Dashboard
 
-## 🚀 Future Work
-Future stages of the project will explore:
+## 📌 Week 2 – Data Collection, Preparation & Cleaning
 
-State-level agricultural performance
-District-level analysis where reliable data is available
-Rainfall and climate variables
-Agricultural market prices
-Market arrivals
-Productivity gaps
-Crop-specific risk analysis
-Agribusiness opportunity scoring
-Predictive modeling where appropriate
+### 🎯 Objective
+
+Week 2 focused on developing a systematic and reproducible approach for collecting, preparing, cleaning, and validating agricultural data for the India-focused agribusiness intelligence project.
+
+The goal was to establish a reliable data pipeline that can later combine crop production, productivity, climate, and agricultural market information for deeper analysis.
+
+### 📊 Data Sources Identified
+
+The following public data sources were evaluated for their relevance to the project:
+
+- **Directorate of Economics & Statistics (DES), Government of India** – Area, Production & Yield (APY) data at state, district, crop, season, and year levels.
+- **India Open Government Data (data.gov.in)** – District-wise and season-wise agricultural production statistics.
+- **Agmarknet** – Agricultural market arrivals and price information.
+- **FAOSTAT** – National crop production, harvested area, and yield data for cross-validation.
+- **Rainfall & Climate Data** – Planned for integration to study the relationship between weather conditions and agricultural productivity.
+
+### 🧹 Data Cleaning & Preparation
+
+A structured data-cleaning pipeline was developed covering:
+
+- Schema and data-type validation
+- Missing-value profiling
+- Duplicate detection
+- Crop-name standardization
+- Unit validation and normalization
+- Negative-value and range checks
+- Outlier identification
+- Geographic and categorical standardization
+- Production–area–yield consistency checks
+- Derived feature creation
+- Final dataset validation
+
+The workflow follows:
+
+**Raw Data → Profiling → Cleaning → Standardization → Validation → Transformation → Processed Dataset**
+
+### 🔍 Feature Engineering
+
+Several analytical features were planned and implemented, including:
+
+- Production Growth %
+- Yield Growth %
+- Area Growth %
+- Yield Gap
+- Crop Production Share
+- Rainfall Deviation %
+- Market Price Volatility
+
+These features will support future analysis of agricultural productivity, supply growth, climate exposure, and agribusiness opportunities.
+
+### 🛠️ Tools & Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Requests
+- BeautifulSoup
+- OpenPyXL
+- Jupyter Notebook
+- VS Code
+- Microsoft Excel
+- Git & GitHub
+
+### 📁 Week 2 Deliverables
+
+The Week 2 folder contains:
+
+```text
+Week-02/
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── reference/
+├── notebooks/
+│   └── Week_2_Data_Collection_and_Cleaning.ipynb
+├── scripts/
+│   └── generate_quality_report.py
+├── outputs/
+│   └── quality_reports/
+└── docs/
+    ├── data_dictionary.csv
+    ├── source_register.csv
+    └── Week_2_Data_Collection_Preparation_Cleaning_Plan.docx
 
 ## 👨‍💻 Author
 ```
