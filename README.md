@@ -167,6 +167,7 @@ Official DES Publications
 Agriculture Dashboard
 DES Agriculture Dashboard
 
+
 ## 📌 Week 2 – Data Collection, Preparation & Cleaning
 
 ### 🎯 Objective
@@ -255,6 +256,7 @@ Week-02/
     ├── data_dictionary.csv
     ├── source_register.csv
     └── Week_2_Data_Collection_Preparation_Cleaning_Plan.docx
+```
 
 ## 👨‍💻 Author
 ```
