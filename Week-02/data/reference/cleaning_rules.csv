@@ -1,0 +1,10 @@
+field_or_rule,action,reason
+Column names,Convert to snake_case,Required for consistent code
+Numeric fields,"Convert area, production and yield to numeric",Prevents text-based calculations
+Missing values,Profile first; do not blindly impute production/yield,Avoids creating artificial output
+Duplicates,Check exact duplicates and business keys,Prevents double counting
+Crop names,Map through reference table,Supports reliable joins
+Units,Validate against source metadata,Prevents scale errors
+Negative values,Flag area/production/yield < 0,Physically invalid
+Period,Retain source period labels,Normal periods are not annual observations
+Outliers,Flag using domain/range checks; investigate before removal,Avoids deleting legitimate extremes

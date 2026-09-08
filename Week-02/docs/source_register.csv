@@ -1,0 +1,6 @@
+source,owner,url,key_fields,project_role
+DES APY Reports,"Directorate of Economics & Statistics, Govt. of India",https://data.desagri.gov.in/website/crops-apy-report-web,"Area, production, yield; state/district/crop/season/year",Primary production source
+DES APY Query Report,"Directorate of Economics & Statistics, Govt. of India",https://data.desagri.gov.in/website/apy-query-report-web,Filtered APY query outputs,Primary extraction route
+India OGD Crop Production,Open Government Data Platform India,https://www.data.gov.in/catalog/district-wise-season-wise-crop-production-statistics-0,District/crop/season/year area and production,Supporting production source
+Agmarknet / e-NAM dashboard,Government of India,https://enam.gov.in/web/dashboard/agmarknet,"Market, commodity, arrivals, min/modal/max prices and date",Future market integration
+FAOSTAT Crop Statistics,FAO,https://www.fao.org/faostat/,"National crop area, production and yield",Cross-validation

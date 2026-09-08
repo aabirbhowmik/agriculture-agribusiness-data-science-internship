@@ -1,0 +1,8 @@
+field,data_type,definition,role
+crop,string,Crop or crop group name,Categorical
+period,string,DES normal-estimate period,Time period
+area_mha,float,Area in million hectares,Numeric
+production_mt,float,Production in million tonnes,Numeric
+yield_kg_ha,float,Yield in kilograms per hectare,Numeric
+production_growth_pct,float,Earliest-to-latest production change within this extract,Derived
+yield_growth_pct,float,Earliest-to-latest yield change within this extract,Derived
