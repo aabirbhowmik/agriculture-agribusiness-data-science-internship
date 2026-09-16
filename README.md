@@ -345,7 +345,89 @@ Interpretation
         ↓
 Agribusiness Insights
 ```
+# Week 4 – Predictive Analysis and Model Evaluation
 
+## 🎯 Objective
+
+Week 4 focused on designing a predictive analysis framework for forecasting agricultural outcomes in India.
+
+The work builds on the data exploration, cleaning, and analytical framework developed during Weeks 1–3.
+
+## 🌾 Forecasting Targets
+
+The primary targets identified are:
+
+- Crop Production
+- Crop Yield
+- Market Prices
+- Market Arrivals
+
+Production and yield are the main targets because they are directly relevant to agricultural supply, productivity, procurement, and planning.
+
+## 📊 Real Project Data
+
+The framework uses the project's agricultural reference dataset developed from Directorate of Economics & Statistics (DES) data.
+
+The current dataset contains **27 crop-level records across three overlapping reference periods**, including area, production, and yield.
+
+Example:
+
+| Crop | Production | Yield |
+|---|---:|---:|
+| Rice | 135.52 Mt | 2,835 kg/ha |
+| Wheat | 111.82 Mt | 3,547 kg/ha |
+| Maize | 36.91 Mt | 3,422 kg/ha |
+
+The current dataset is used to demonstrate the predictive framework but is not large enough for reliable final ML forecasting. Future work will expand it to annual state- and district-level data.
+
+## 🤖 Models Considered
+
+- Naive Forecasting Baseline
+- Linear Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+
+Models will be compared based on their out-of-sample performance rather than assumptions about which method will perform best.
+
+## 📈 Evaluation Metrics
+
+The framework uses:
+
+- **MAE** – Average prediction error
+- **RMSE** – Penalizes larger errors
+- **R²** – Measures explained variation
+- **MAPE** – Percentage-based error
+- **sMAPE** – Alternative percentage error metric
+
+## 🧪 Validation Strategy
+
+Since agricultural forecasting involves time-dependent data, chronological validation will be used instead of random splitting.
+
+```text
+Data
+ ↓
+Validation & Cleaning
+ ↓
+Feature Engineering
+ ↓
+Train / Validation / Test
+ ↓
+Baseline & ML Models
+ ↓
+Cross-Validation
+ ↓
+MAE / RMSE / R²
+ ↓
+Error Analysis
+ ↓
+Final Forecast
+```
+## ⚠️ Important Limitation
+
+The current dataset is too small for defensible machine-learning performance results. Therefore, no fabricated MAE, RMSE, R², or model-accuracy results are reported.
+
+The next stage will expand the dataset and integrate climate and market variables before final model training.
 ## 👨‍💻 Author
 ```
 Aabir Bhowmik
